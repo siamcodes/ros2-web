@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Connection from './Connection';
 
 export default class Body extends Component {
   state = {
@@ -23,6 +24,7 @@ export default class Body extends Component {
     return (
       <div>
         <h2>Home Page</h2>
+        <Connection />
         <button className='btn btn-primary' onClick={() => this.button_callback2("Somkiat")}>Send</button> {' '}
         <button className='btn btn-secondary' onClick={ () => this.button_callback()} >Click  </button> {' '}
         <button className='btn btn-info' onClick={() => this.count_callback()}>Count</button>
